@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Favicon.jpg">
+</head>
+<body>
+  <h1 class="d-flex justify-center">Quiz App</h1>
+    <div class="grid-container-two-col rule-book">
+        <section class="section-rule-box">
+          <div class="rules">
+            <h2 class="rule-title">Guidelines</h2>
+            <ul class="rules-list">
+              <li class="rule-point">
+                There are total 10 questions in each category.
+              </li>
+              <li class="rule-point">You can attempt each question only once.</li>
+              <li class="rule-point">
+                Each question carries one mark. No negative marking for wrong
+                answers.
+              </li>
+              <li class="rule-point">Question are Multiple Choice Questions.</li>
+              <li class="rule-point">
+                Don't plagarize. Try to answer on your own.
+              </li>
+              <li class="rule-point">You can take the quiz multiple times.</li>
+            </ul>
+            <button class="play-btn cursor">
+                Let the game begin
+                <span role="img" aria-label="fire">
+                  🔥🔥
+                </span>
+            </button>
+          </div>
+        </section>
+      </div>
+
+
+      <div class="select-quiz-type grid-container-two-col hide">
+        <div class="select-quiz-category">
+          <h2 class="h2-title">Select Quiz Category</h2>
+          <button class="sc-button selected">Science: Computers</button>
+          <button class="gk-button">General Knowledge</button>
+          <button class="sports-button">Sports</button>
+        </div>
+        <div>
+          <h2 class="h2-title">Select Difficulty</h2>
+          <button class="easy-button selected">Easy</button>
+          <button class="medium-button">Medium</button>
+          <button class="hard-button">Hard</button>
+        </div>
+        <div>
+          <button class="confirm-button">Confirm</button>
+        </div>
+      </div>
+
+
+      <div class="quiz hide d-flex direction-column gap">
+        <div class="quiz-container d-flex justify-center">
+            <span class="quiz-category"></span>
+        </div>
+        <div class="d-flex justify-space-between">
+          <span class="qns-count"></span>
+          <span class="cur-score"></span>
+        </div>
+        <div class="questions-container "></div>
+        <div class="options-container d-flex direction-column gap"></div>
+        <div class="cta-btns d-flex justify-center gap">
+            <button class="cta quit">Quit</button>
+            <button class="cta next">Next</button>
+        </div>
+      </div>
+
+
+      <div class="result hide"></div>
+    
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
